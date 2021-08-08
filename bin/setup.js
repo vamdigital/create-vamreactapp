@@ -15,7 +15,7 @@ const repo = "https://github.com/vamdigital/create-vamreactapp.git";
 const execPromise = promisify(exec);
 
 console.log(
-  "💿 Welcome to Create-VAM-NXApp. Let's get you set up with a new project."
+  "💿 Welcome to Create-VAM-ReactApp. Let's get you set up with a new project."
 );
 
 async function runShellCmd(command) {
@@ -92,7 +92,7 @@ async function setup() {
     unlinkSync(join(process.cwd(), "README.md"));
     unlinkSync(join(process.cwd(), "bin", "setup.js"));
     rmdirSync(join(process.cwd(), "bin"));
-    rmdirSync(join(process.cwd(), "NOTES.MD"));
+    rmdirSync(join(process.cwd(), "NOTES.md"));
 
     /** Changing the title of the page from Starter to folderName */
     const indexFilePath = `${folderPath}/${folderName}/public/index.html`;
