@@ -95,7 +95,7 @@ async function setup() {
     rmdirSync(join(process.cwd(), "bin"));
 
     /** Changing the title of the page from Starter to folderName */
-    const indexFilePath = `${folderPath}/${folderName}/public/index.html`;
+    const indexFilePath = `${folderPath}/public/index.html`;
     fs.readFile(indexFilePath, "utf-8", function (readFileError, data) {
       if (readFileError) console.log(readFileError);
       let newValue = data.replace(/Starter/gi, `${folderName}`);
