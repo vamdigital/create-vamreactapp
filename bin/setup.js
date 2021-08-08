@@ -90,9 +90,9 @@ async function setup() {
 
     /** remove extra files and folders from disk. we don't need it anymore */
     unlinkSync(join(process.cwd(), "README.md"));
+    unlinkSync(join(process.cwd(), "NOTES.md"));
     unlinkSync(join(process.cwd(), "bin", "setup.js"));
     rmdirSync(join(process.cwd(), "bin"));
-    rmdirSync(join(process.cwd(), "NOTES.md"));
 
     /** Changing the title of the page from Starter to folderName */
     const indexFilePath = `${folderPath}/${folderName}/public/index.html`;
